@@ -1,0 +1,26 @@
+[project]
+name = "aws-sample-project"
+version = "0.1.0"
+description = "Learning CLI project"
+requires-python = ">=3.10"
+dependencies = [
+    "typer",
+    "boto3",
+    "boto3-stubs[s3]"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

@@ -1,0 +1,8 @@
+pyproject.toml
+src/aws_sample_project.egg-info/PKG-INFO
+src/aws_sample_project.egg-info/SOURCES.txt
+src/aws_sample_project.egg-info/dependency_links.txt
+src/aws_sample_project.egg-info/requires.txt
+src/aws_sample_project.egg-info/top_level.txt
+src/s3_app/__init__.py
+src/s3_app/s3ctl.py
