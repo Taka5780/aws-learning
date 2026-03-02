@@ -5,8 +5,9 @@ Summary: Learning CLI project
 Requires-Python: >=3.10
 Requires-Dist: typer
 Requires-Dist: boto3
-Requires-Dist: boto3-stubs[s3]
 Provides-Extra: dev
 Requires-Dist: pytest; extra == "dev"
 Requires-Dist: ruff; extra == "dev"
 Requires-Dist: mypy; extra == "dev"
+Requires-Dist: moto[dynamodb,ec2,lambda,rds,s3]; extra == "dev"
+Requires-Dist: boto3-stubs[ec2,s3]; extra == "dev"

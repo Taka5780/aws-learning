@@ -3,7 +3,7 @@ from botocore.exceptions import BotoCoreError, ClientError
 from mypy_boto3_s3.client import S3Client
 from mypy_boto3_s3.type_defs import ListBucketsOutputTypeDef
 
-from s3_app.logger_config import setup_logger
+from logger_config import setup_logger
 
 logger = setup_logger()
 

@@ -1,1 +1,3 @@
+ec2_app
+logger_config
 s3_app

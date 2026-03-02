@@ -7,10 +7,12 @@ LOG_DIR.mkdir(exist_ok=True)
 
 
 def setup_logger() -> logging.Logger:
-    logger = logging.getLogger("awsapp")
+    logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
 
-    formater = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
+    formater = logging.Formatter(
+        "%(asctime)s [%(levelname)s] [%(filename)s] %(message)s"
+    )
 
     file_hender = TimedRotatingFileHandler(
         filename=LOG_DIR / "awsapp.log",
