@@ -15,7 +15,6 @@ from ec2_app.ec2ctl import determine_action, main
     ],
 )
 def test_determine_action(state, expected):
-    """状態に応じたアクション判定が正しいか"""
     assert determine_action(state) == expected
 
 
