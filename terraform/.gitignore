@@ -1,0 +1,15 @@
+# Terrafrom
+# Terraformのバイナリやプラグイン（重いので不要）
+.terraform/
+
+# インフラの状態記録（他人の環境と競合したり、機密情報が含まれるためPush禁止）
+*.tfstate
+*.tfstate.*
+
+# 変数ファイル（パスワードなどが含まれる場合がある）
+*.tfvars
+*.tfvars.json
+
+# ログファイル
+errored.tfstate
+terraform.tflog

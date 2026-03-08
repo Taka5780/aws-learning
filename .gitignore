@@ -14,7 +14,3 @@ __pycache__/
 # Ruff cache
 .ruff_cache/
 
-# Terraform (将来入れる予定)
-.terraform/
-terraform.tfstate
-terraform.tfstate.backup
