@@ -1,0 +1,19 @@
+# Ansible retry files
+*.retry
+
+# Ansible local facts
+fact_cache/
+
+# SSH Private Keys
+*.pem
+*.key
+
+# tmp file
+.DS_Store
+Thumbs.db
+
+# Ansible Vault
+.ansible_vault
+
+# Generated inventory
+hosts.ini

@@ -5,6 +5,7 @@
 # インフラの状態記録（他人の環境と競合したり、機密情報が含まれるためPush禁止）
 *.tfstate
 *.tfstate.*
+.terraform.lock.hcl
 
 # 変数ファイル（パスワードなどが含まれる場合がある）
 *.tfvars
@@ -13,3 +14,4 @@
 # ログファイル
 errored.tfstate
 terraform.tflog
+
