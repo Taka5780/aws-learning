@@ -1,0 +1,19 @@
+- name: Install Amazon CloudWatch Agent
+  dnf:
+    name: amazon-cloudwatch-agent
+    state: present
+
+- name: Deploy CloudWatch Agent config
+  template:
+    src: amazon-cloudwatch-agent.json.j2
+    dest: /opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.json
+    owner: root
+    group: root
+    mode: "0644"
+  notify: restart cloudwatch-agent
+
+- name: Ensure CloudWatch Agent is started and enabled
+  systemd:
+    name: amazon-cloudwatch-agent
+    state: started
+    enabled: yes

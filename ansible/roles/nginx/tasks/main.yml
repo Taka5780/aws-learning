@@ -1,0 +1,15 @@
+- name: Install Nginx
+  dnf:
+    name: nginx
+    state: present
+
+- name: Start and Enable Nginx
+  ansible.builtin.systemd:
+    name: nginx
+    state: started
+    enabled: true
+
+- name: Create a simple index.html
+  ansible.builtin.copy:
+    content: "<h1>Hello from Ansible!</h1>"
+    dest: /usr/share/nginx/html/index.html

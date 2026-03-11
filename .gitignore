@@ -14,3 +14,6 @@ __pycache__/
 # Ruff cache
 .ruff_cache/
 
+# vscode
+.vscode/
+**/.vscode/
